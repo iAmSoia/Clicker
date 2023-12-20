@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.CompilerServices;
 using System.Xml.Serialization;
 
 namespace Кликер
@@ -47,7 +48,7 @@ namespace Кликер
                 Console.WriteLine($"Error loading user credentials: {ex.Message}");
             }
         }
-        private void SaveUserCredentials()
+        static private void SaveUserCredentials()
         {
             try
             {
@@ -123,7 +124,7 @@ namespace Кликер
                     user.BoolAchievement4 = true;
                 }
             }
+            SaveUserCredentials();
         }
-
     }
 }
