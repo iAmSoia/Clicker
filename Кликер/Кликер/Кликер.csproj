@@ -68,7 +68,7 @@
       <DependentUpon>Achievements.xaml</DependentUpon>
     </Compile>
     <Compile Include="logic\BooleanToVisibilityConverter.cs" />
-    <Compile Include="logic\DesignAccount.cs" />
+    <Compile Include="logic\OnlineCheck.cs" />
     <Compile Include="logic\ButtonClick.cs" />
     <Compile Include="logic\UserData.cs" />
     <Compile Include="Login.xaml.cs">

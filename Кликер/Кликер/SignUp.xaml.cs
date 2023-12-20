@@ -4,8 +4,7 @@ namespace Кликер
 {
     public partial class SignUp : Window
     {
-        readonly IButtonService buttonClick=new ButtonClick();
-        readonly ISounds sounds = new Sounds();
+        readonly IButtonService buttonClick = new ButtonClick();
 
         public SignUp()
         {
@@ -13,9 +12,8 @@ namespace Кликер
         }
         private void Button_Click_Save(object sender, RoutedEventArgs e)
         {
-            sounds.AllSounds();
+            Sounds.AllSounds();
             buttonClick.SignSaveClick(UsernameTextBox, PasswordBox, this);
-
         }
     }
 }

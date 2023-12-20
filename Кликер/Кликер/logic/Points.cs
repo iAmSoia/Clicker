@@ -24,7 +24,6 @@ namespace Кликер
         readonly List<int> pointHistory = new List<int>();
 
         public int TotalPoints { get { return totalPoints; } }
-        public int MaxPoints { get { return maxPoints; } }
         public void AddPoint()
         {
             totalPoints++;
@@ -52,20 +51,27 @@ namespace Кликер
             maxPoints = pointHistory.Max();
             MaxPoint.Text = maxPoints.ToString();
         }
-        void CheckMaxPoint()
-        {
+
+        //меняет значения булевых переменных, связанных с (не)доступностью достижений
+        void CheckMaxPoint() //номера 2.3.4 - это порядковый номер панели достижения
+        {                           // 100.200.300 - это очки, необходимые для открытия достижений 2.3.4
             string name = PlayerData.GetUserNameWhenLogin();
-            if (maxPoints >= 100 && maxPoints < 200 && DesignAccount.InAccount)
+            if (OnlineCheck.InAccount)
             {
-                PlayerData.SwitchBoolProperty(name, 2);
-            }
-            else if (maxPoints >= 200 && maxPoints < 300 && DesignAccount.InAccount)
-            {
-                PlayerData.SwitchBoolProperty(name, 3);
-            }
-            else if (maxPoints >= 300 && DesignAccount.InAccount)
-            {
-                PlayerData.SwitchBoolProperty(name, 4);
+                int switchValue = 0;
+                if (maxPoints >= 100 && maxPoints < 200)
+                {
+                    switchValue = 2;
+                }
+                else if (maxPoints >= 200 && maxPoints < 300)
+                {
+                    switchValue = 3;
+                }
+                else if (maxPoints >= 300)
+                {
+                    switchValue = 4;
+                }
+                if (switchValue != 0) { PlayerData.SwitchBoolProperty(name, switchValue); }
             }
         }
     }

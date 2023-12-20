@@ -5,7 +5,6 @@ namespace Кликер
     public partial class StartWindow : Window
     {
         readonly IButtonService buttonClick = new ButtonClick();
-        readonly ISounds sounds = new Sounds();
 
         public StartWindow()
         {
@@ -14,18 +13,18 @@ namespace Кликер
 
         private void Start_ButtonClick(object sender, RoutedEventArgs e)
         {
-            sounds.AllSounds();
+            Sounds.AllSounds();
             buttonClick.StartClick(this);
         }
         private void Login_ButtonClick(object sender, RoutedEventArgs e)
         {
-            sounds.AllSounds();
+            Sounds.AllSounds();
             Login login = new Login();
             login.ShowDialog();
         }
         private void Sign_ButtonClick(object sender, RoutedEventArgs e)
         {
-            sounds.AllSounds();
+            Sounds.AllSounds();
             SignUp signUp = new SignUp();
             signUp.ShowDialog();
         }

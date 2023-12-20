@@ -48,25 +48,25 @@ namespace Кликер
             startWindow.Hide();
             startWindow.Close();
         }
-        public void SignSaveClick(TextBox UsernameTextBox, PasswordBox password, Window window)
+        public void SignSaveClick(TextBox usernameTextBox, PasswordBox password, Window window)
         {
             PlayerData player = new PlayerData();
-            if (player.RegisterUser(UsernameTextBox.Text, password.Password))
+            if (player.RegisterUser(usernameTextBox.Text, password.Password))
             {
                 MessageBox.Show("Регистрация прошла успешно!");
                 window.Close();
             }
             else MessageBox.Show("Возникла ошибка :(");
         }
-        public void LoginClick(TextBox UsernameTextBox, PasswordBox password, Window window)
+        public void LoginClick(TextBox usernameTextBox, PasswordBox password, Window window)
         {
             PlayerData player = new PlayerData();
-            if (player.AuthenticateUser(UsernameTextBox.Text, password.Password))
+            if (player.AuthenticateUser(usernameTextBox.Text, password.Password))
             {
                 window.Close();
                 MessageBox.Show("Добро пожаловать!");
-                DesignAccount.SwitchInAccount();
-                player.SaveUserNameWhenLogin(UsernameTextBox.Text);
+                OnlineCheck.SwitchOnline();
+                player.SaveUserNameWhenLogin(usernameTextBox.Text);
             }
             else MessageBox.Show("Возникла ошибка :(");
         }

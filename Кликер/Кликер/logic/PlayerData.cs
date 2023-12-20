@@ -8,7 +8,9 @@ namespace Кликер
 {
     internal class PlayerData
     {
-        private const string FilePath = "E:\\учёба\\3 семестр\\ООП\\Кликер\\credentials.xml";
+        private const string path = "credentials.xml";
+        static readonly string FilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, path);
+
         private static List<UserData> userCredentials;
         private static string userNameWhenLogin;
 
@@ -16,7 +18,7 @@ namespace Кликер
         {
             LoadUserCredentials();
         }
-        //для работы с уникальным пользователем
+        //для работы с уникальным пользователем - сохранение имени при входе
         public void SaveUserNameWhenLogin(string userName)
         {
             userNameWhenLogin = userName;
@@ -87,16 +89,8 @@ namespace Кликер
         {
             var user = userCredentials.Find(u => u.Username == username);
 
-            if (user != null && user.Password == password)
-            {
-                Console.WriteLine("Authentication successful.");
-                return true;
-            }
-            else
-            {
-                Console.WriteLine("Authentication failed.. Incorrect username or password.");
-                return false;
-            }
+            if (user != null && user.Password == password) { return true; }
+            else { return false; }
         }
         public bool UserExists(string username)
         {

@@ -1,52 +1,44 @@
 ﻿using System;
+using System.IO;
 using System.Media;
+using System.Reflection;
 
 namespace Кликер
 {
-    interface ISounds
+    public static class Sounds
     {
-        void AllSounds();
-        void MainButtonSounds();
-        void Aсhievements4Sounds();
-        void Aсhievements3Sounds();
-        void Aсhievements2Sounds();
-        void Aсhievements1Sounds();
-    }
+        private static readonly SoundPlayer mainButton = new SoundPlayer("E:\\учёба\\3 семестр\\ООП\\Кликер\\Clicker\\Кликер\\Кликер\\zz\\zvuk-nopki-v-kompyuternoy-igre1.wav");
+        private static readonly SoundPlayer aсhievements4Sounds = new SoundPlayer("E:\\учёба\\3 семестр\\ООП\\Кликер\\Clicker\\Кликер\\Кликер\\zz\\рёв.wav");
+        private static readonly SoundPlayer aсhievements3Sounds = new SoundPlayer("E:\\учёба\\3 семестр\\ООП\\Кликер\\Clicker\\Кликер\\Кликер\\zz\\Звук-Где-собака-бегает-по-таявшему-снегу.wav");
+        private static readonly SoundPlayer click = new SoundPlayer("E:\\учёба\\3 семестр\\ООП\\Кликер\\Clicker\\Кликер\\Кликер\\zz\\клик.wav");
+        private static readonly SoundPlayer aсhievements2Sounds = new SoundPlayer("E:\\учёба\\3 семестр\\ООП\\Кликер\\Clicker\\Кликер\\Кликер\\zz\\Bumblebee.wav");
+        private static readonly SoundPlayer aсhievements1Sounds = new SoundPlayer("E:\\учёба\\3 семестр\\ООП\\Кликер\\Clicker\\Кликер\\Кликер\\zz\\Звук-с-появлением-святого-духа-или-священника.wav");
 
-    public class Sounds : ISounds
-    {
-        private readonly SoundPlayer mainButton = new SoundPlayer("E:\\учёба\\3 семестр\\ООП\\Кликер\\Clicker\\Кликер\\Кликер\\zz\\zvuk-nopki-v-kompyuternoy-igre1.wav");
-        private readonly SoundPlayer aсhievements4Sounds = new SoundPlayer("E:\\учёба\\3 семестр\\ООП\\Кликер\\Clicker\\Кликер\\Кликер\\zz\\рёв.wav");
-        private readonly SoundPlayer aсhievements3Sounds = new SoundPlayer("E:\\учёба\\3 семестр\\ООП\\Кликер\\Clicker\\Кликер\\Кликер\\zz\\Звук-Где-собака-бегает-по-таявшему-снегу.wav");
-        private readonly SoundPlayer click = new SoundPlayer("E:\\учёба\\3 семестр\\ООП\\Кликер\\Clicker\\Кликер\\Кликер\\zz\\клик.wav");
-        private readonly SoundPlayer aсhievements2Sounds = new SoundPlayer("E:\\учёба\\3 семестр\\ООП\\Кликер\\Clicker\\Кликер\\Кликер\\zz\\Bumblebee.wav");
-        private readonly SoundPlayer aсhievements1Sounds = new SoundPlayer("E:\\учёба\\3 семестр\\ООП\\Кликер\\Clicker\\Кликер\\Кликер\\zz\\Звук-с-появлением-святого-духа-или-священника.wav");
-
-        public void MainButtonSounds()
+        public static void MainButtonSounds()
         {
             PlayButtonSounds(mainButton);
         }
-        public void Aсhievements4Sounds()
+        public static void Aсhievements4Sounds()
         {
             PlayButtonSounds(aсhievements4Sounds);
         }
-        public void Aсhievements3Sounds()
+        public static void Aсhievements3Sounds()
         {
             PlayButtonSounds(aсhievements3Sounds);
         }
-        public void Aсhievements2Sounds()
+        public static void Aсhievements2Sounds()
         {
             PlayButtonSounds(aсhievements2Sounds);
         }
-        public void Aсhievements1Sounds()
+        public static void Aсhievements1Sounds()
         {
             PlayButtonSounds(aсhievements1Sounds);
         }
-        public void AllSounds()
+        public static void AllSounds()
         {
             PlayButtonSounds(click);
         }
-        private void PlayButtonSounds(SoundPlayer soundPlayer)
+        private static void PlayButtonSounds(SoundPlayer soundPlayer)
         {
             try
             {
