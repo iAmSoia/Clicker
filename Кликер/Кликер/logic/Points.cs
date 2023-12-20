@@ -49,8 +49,8 @@ namespace Кликер
         }
         void MaxOnHistoryPoint(TextBox MaxPoint)
         {
-            int max = pointHistory.Max();
-            MaxPoint.Text = max.ToString();
+            maxPoints = pointHistory.Max();
+            MaxPoint.Text = maxPoints.ToString();
         }
         void CheckMaxPoint()
         {

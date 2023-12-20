@@ -30,7 +30,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-       
+        <local:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
         <Style x:Key="TextStyle" TargetType="TextBlock">
             <Setter Property="FontSize" Value="18" />
             <Style.Triggers>

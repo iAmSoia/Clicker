@@ -6,7 +6,7 @@ namespace Кликер
     {
         DateTime lastTime = DateTime.MaxValue; //по дефолту - значение, которое не может быть достигнуто
         TimeSpan distinctionOnClick = TimeSpan.Zero; //"расстояние" во времени между нажатиями
-        TimeSpan maxDistinction = TimeSpan.FromSeconds(1);
+        TimeSpan maxDistinction = TimeSpan.FromSeconds(0.7);
         //проверка на задержку между нажатиями
         //если значение True, то значение очков необходимо обнулить
         public bool CheckedTimeClick()

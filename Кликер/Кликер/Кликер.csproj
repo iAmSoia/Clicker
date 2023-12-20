@@ -67,7 +67,6 @@
     <Compile Include="Achievements.xaml.cs">
       <DependentUpon>Achievements.xaml</DependentUpon>
     </Compile>
-    <Compile Include="logic\BackgroundSounds.cs" />
     <Compile Include="logic\BooleanToVisibilityConverter.cs" />
     <Compile Include="logic\DesignAccount.cs" />
     <Compile Include="logic\ButtonClick.cs" />

@@ -10,7 +10,7 @@ namespace Кликер
         readonly ISounds sounds = new Sounds();
         readonly IButtonService button = new ButtonClick();
 
-        private PlayerData playerData;
+        //private PlayerData playerData;
         public Achievements(MainWindow mainWindow)
         {
             InitializeComponent();
