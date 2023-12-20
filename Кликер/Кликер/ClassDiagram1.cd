@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Кликер.BooleanToVisibilityConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>logic\BooleanToVisibilityConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Кликер.ButtonClick" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAJEAAEgAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>logic\ButtonClick.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.236" />
+  </Class>
+  <Class Name="Кликер.OnlineCheck" Collapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAQAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>logic\OnlineCheck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Кликер.PlayerData" Collapsed="true">
+    <Position X="4.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACAAAAAEAgQAgAEACAAIAAAAACAABAAFAAAAAAAA=</HashCode>
+      <FileName>logic\PlayerData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Кликер.Points" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAMAAAACAAAQAAQAAIAAAAAAAAQIgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>logic\Points.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Кликер.Sounds" Collapsed="true">
+    <Position X="3.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABQACAAAAAAKCgAAAACAAgUAAQ=</HashCode>
+      <FileName>logic\Sounds.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Кликер.TimeCheck" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAABAAgAAAAIAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>logic\TimeCheck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Кликер.UserData" Collapsed="true">
+    <Position X="4.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAACAIAHAAAAAAA=</HashCode>
+      <FileName>logic\UserData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Кликер.IButtonService" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAJEAAEAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>logic\ButtonClick.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Кликер.IPoint" Collapsed="true">
+    <Position X="8.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAACAAAQAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>logic\Points.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
